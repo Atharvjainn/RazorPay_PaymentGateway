@@ -10,7 +10,7 @@ const createOrder = async(req,res) => {
             currency : 'INR',
             receipt : `receipt_${Date.now()}`
         })
-        return res.status(201).json({data : order})
+        return res.status(201).json(order)
 
     } catch (error) {
         console.log("error in razorpay controller!");
